@@ -3,6 +3,19 @@ body{
     background: #999C9B
 }
 
+@media (min-width:1024px){
+    .form{
+            position: relative;
+            left: 430px
+        
+        
+        
+    }
+    
+    
+}
+
+
 .form{
     
     border-radius: 30px;

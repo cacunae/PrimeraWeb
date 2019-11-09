@@ -33,20 +33,7 @@
             </div>
         </header>
    
-   
-<!--
-       <div class="error">
-        <div class="mensaje_error">
-            <h3>Errores Encontrados</h3>
-            <p>Han habido algunos errores!</p>
-            <p>Han habido algunos errores!</p>
-            <p>Han habido algunos errores!</p>
-            <span id ="btnCerrar">Cerrar</span>
-        
-        </div>
-    </div>     
-       
-       -->    
+
         
     <div id= "form" class="form">
       
@@ -57,28 +44,29 @@
               <h3>correo@perritos.cl</h3>
           </div> 
         
-         
-        <form action=" " class="formulario" > 
+          
+       
+        <form action="PHP/registrarEnBD.php" method="post"         class="formulario" > 
              
           <div id="info_usuario" class="info_usuario">
               <h2>Déjanos un comentario</h2>
               <label for="nombres">Nombre</label>
               
-              <input type="text" id="nombres">
+              <input type="text" id="nombres" name="nombres" required>
               
               <label for="telefono">Telefono</label>
-              <input type="text" id="telefono">
+              <input type="text" id="telefono" name="telefono" required>
               
               
               <label for="correo">Correo</label>
-              <input type="text" id="correo">
+              <input type="email" id="correo" name="correo" required>
               
               
               <label for="comentario">Comentario</label>
-              <textarea id ="comentario"></textarea>
+              <textarea id ="comentario" name="comentario" required></textarea>
               
               
-              <input type="button" value="Enviar comentarios" id="btnSend">   
+              <input type="submit" value="Enviar comentarios" id="btnSend">   
           </div>      
               
         </form> 
